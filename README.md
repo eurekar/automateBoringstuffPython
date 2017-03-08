@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/lotspaih/automateBoringstuffPython/master/LICENSE)
+
 # automateBoringstuffPython
 Automate the Boring Stuff With Python Practice and Project Repository
 
