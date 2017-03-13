@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/lotspaih/automateBoringstuffPython/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-CC0-blue.svg)](https://raw.githubusercontent.com/lotspaih/automateBoringstuffPython/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/lotspaih/automateBoringstuffPython.svg)](https://github.com/lotspaih/automateBoringstuffPython/stargazers)
 
 # automateBoringstuffPython
 Automate the Boring Stuff With Python Practice and Project Repository
