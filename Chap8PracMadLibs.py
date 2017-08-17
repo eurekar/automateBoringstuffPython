@@ -20,22 +20,33 @@ for i in range(len(madLibWords)):
     if adjectiveRegex.match(madLibWords[i]):
         print('Enter an adjective', end=': ')
         sub = input()
+        madLibWords[i] = adjectiveRegex.sub(sub, madLibWords[i])
     elif nounRegex.match(madLibWords[i]):
-        print('Enter a noun', end=': ')
+        print('Enter a noun', end =': ')
         sub = input()
+        madLibWords[i] = nounRegex.sub(sub, madLibWords[i])
     elif adverbRegex.match(madLibWords[i]):
-        print('Enter an adverb', end=': ')
+        print('Enter an adverb', end =': ')
         sub = input()
+        madLibWords[i] = adverbRegex.sub(sub, madLibWords[i])
     elif verbRegex.match(madLibWords[i]):
-        print('Enter a verb', end=': ')
+        print('Enter a verb', end =': ')
         sub = input()
+        madLibWords[i] = verbRegex.sub(sub, madLibWords[i])
     else:
+        madLibWords[i] = madLibWords[i] + ' '
         continue
-    madLibWords.remove(madLibWords[i])
-    madLibWords.insert(i, sub)
 
-joinWordsList = ' '
+    madLibWords[i] = madLibWords[i] + ' '
+
+joinWordsList = ''
+
 newString = joinWordsList.join(madLibWords)
+n = len(newString)
+
+
 with open('madlibsNew.txt', 'w') as newMadLibFile:
-    newMadLibFile.write(newString)
+    newMadLibFile.write(newString[0:n-1])
 print(newString)
+
+newMadLibFile.close()
